@@ -79,6 +79,7 @@ tokens served from the server's prefix cache (as reported by the server).
 | Date | What | Link |
 |---|---|---|
 | 2026-11-11 | GLM-5.3-Flash, official SGLang recipe vs optimized build, 8 GPUs each, concurrency 16 / 32 / 64 — optimized output throughput 1.72× / 1.64× / 1.38×, all integrity checks PASS | [`results/2026-11-11-8gpu-l20x/`](results/2026-11-11-8gpu-l20x/README.md) |
+| 2026-11-12 | `TIER=a1` (running cap 64) on the same 8× L20X node: 64 agents 2,954 → 3,357 output tok/s (+14%), first token p50 1.7 s → 0.18 s, same at 16 / 32, all integrity checks PASS | [`results/2026-11-12-l20x-a1/`](results/2026-11-12-l20x-a1/README.md) |
 
 Add your own run as `results/<date>-<hardware>/<setup>/` (open a pull request); the compare script works across
 anyone's runs as long as the corpus sha256 matches. Every run directory contains `summary.json` (metrics, integrity checks, manifest with
